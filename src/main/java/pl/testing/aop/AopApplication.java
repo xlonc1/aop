@@ -5,8 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-import pl.testing.aop.dao.AccountDAO;
-import java.util.Arrays;
+import pl.testing.aop.account.AccountDAO;
 
 @SpringBootApplication
 public class AopApplication {
@@ -19,6 +18,7 @@ public class AopApplication {
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
 			AccountDAO theAccountDao = ctx.getBean("accountDAO", AccountDAO.class);
+			theAccountDao.addAccount();
 			theAccountDao.addAccount();
 		};
 	}

@@ -1,6 +1,5 @@
-package pl.testing.aop.config;
+package pl.testing.aop.account;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 

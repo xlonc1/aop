@@ -1,4 +1,4 @@
-package pl.testing.aop.dao;
+package pl.testing.aop.account;
 
 import org.springframework.stereotype.Component;
 
